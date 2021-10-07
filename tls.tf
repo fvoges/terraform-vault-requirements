@@ -40,7 +40,7 @@ resource "tls_cert_request" "vault_cert_request" {
   private_key_pem = tls_private_key.vault_private_key.private_key_pem
 
   dns_names    = [format("*.%s", var.vault_domain)]
-  ip_addresses = ["127.0.0.1", "::1" ]
+  ip_addresses = ["127.0.0.1", "::1"]
 
   subject {
     common_name  = "vault.hashicorp.com"

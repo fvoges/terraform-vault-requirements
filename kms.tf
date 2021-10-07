@@ -4,7 +4,7 @@ resource "aws_kms_key" "main" {
   deletion_window_in_days = var.vault_kms_deletion_days
 
   tags = {
-    Name  = "vault-kms-${var.application_prefix}"
+    Name = "vault-kms-${var.application_prefix}"
     // Owner = var.owner
   }
 }
