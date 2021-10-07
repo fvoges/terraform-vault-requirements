@@ -51,9 +51,9 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_unseal_aws_kms_arn"></a> [unseal\_aws\_kms\_arn](#output\_unseal\_aws\_kms\_arn) | n/a |
-| <a name="output_unseal_aws_kms_id"></a> [unseal\_aws\_kms\_id](#output\_unseal\_aws\_kms\_id) | n/a |
-| <a name="output_vault_license_sercret_arn"></a> [vault\_license\_sercret\_arn](#output\_vault\_license\_sercret\_arn) | n/a |
-| <a name="output_vault_tls_sercret_arn"></a> [vault\_tls\_sercret\_arn](#output\_vault\_tls\_sercret\_arn) | n/a |
+| <a name="output_unseal_aws_kms_arn"></a> [unseal\_aws\_kms\_arn](#output\_unseal\_aws\_kms\_arn) | AWS KMS key ARN for Vault auto-unseal |
+| <a name="output_unseal_aws_kms_id"></a> [unseal\_aws\_kms\_id](#output\_unseal\_aws\_kms\_id) | AWS KMS key ID for Vault auto-unseal |
+| <a name="output_vault_license_sercret_arn"></a> [vault\_license\_sercret\_arn](#output\_vault\_license\_sercret\_arn) | AWS Secret Manager ARN for Vault Enterprise license string |
+| <a name="output_vault_tls_sercret_arn"></a> [vault\_tls\_sercret\_arn](#output\_vault\_tls\_sercret\_arn) | AWS Secret Manager ARN for Vault TLS CA, cert, and private key |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
