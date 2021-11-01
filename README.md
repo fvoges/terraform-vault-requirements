@@ -49,14 +49,14 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_prefix"></a> [application\_prefix](#input\_application\_prefix) | The prefix to give to cloud entities | `string` | `"vault"` | no |
-| <a name="input_vault_ca_bundle_secret"></a> [vault\_ca\_bundle\_secret](#input\_vault\_ca\_bundle\_secret) | The CA bundle to store in AWS Secrets Manager | `string` | `null` | no |
+| <a name="input_vault_ca_bundle_secret"></a> [vault\_ca\_bundle\_secret](#input\_vault\_ca\_bundle\_secret) | The CA bundle to store in AWS Secrets Manager. NOT IMPLEMENTED | `string` | `null` | no |
 | <a name="input_vault_domain"></a> [vault\_domain](#input\_vault\_domain) | The DNS domain name for the TLS certificate | `string` | `"example.com"` | no |
 | <a name="input_vault_kms_deletion_days"></a> [vault\_kms\_deletion\_days](#input\_vault\_kms\_deletion\_days) | Duration in days after which the key is deleted after destruction of the resource. | `number` | `30` | no |
 | <a name="input_vault_kms_key_rotate"></a> [vault\_kms\_key\_rotate](#input\_vault\_kms\_key\_rotate) | Specifies whether key rotation is enabled. | `bool` | `true` | no |
 | <a name="input_vault_license"></a> [vault\_license](#input\_vault\_license) | Vault license string | `string` | n/a | yes |
-| <a name="input_vault_manage_tls_secrets"></a> [vault\_manage\_tls\_secrets](#input\_vault\_manage\_tls\_secrets) | Manage the TLS secret AWS Secrets Manager | `string` | `false` | no |
-| <a name="input_vault_private_key_secret"></a> [vault\_private\_key\_secret](#input\_vault\_private\_key\_secret) | The signed certificate's private key to store in AWS Secrets Manager | `string` | `null` | no |
-| <a name="input_vault_signed_cert_secret"></a> [vault\_signed\_cert\_secret](#input\_vault\_signed\_cert\_secret) | The signed certificate to store in AWS Secrets Manager | `string` | `null` | no |
+| <a name="input_vault_manage_tls_secrets"></a> [vault\_manage\_tls\_secrets](#input\_vault\_manage\_tls\_secrets) | Manage the TLS secret AWS Secrets Manager. NOT IMPLEMENTED | `string` | `false` | no |
+| <a name="input_vault_private_key_secret"></a> [vault\_private\_key\_secret](#input\_vault\_private\_key\_secret) | The signed certificate's private key to store in AWS Secrets Manager. NOT IMPLEMENTED | `string` | `null` | no |
+| <a name="input_vault_signed_cert_secret"></a> [vault\_signed\_cert\_secret](#input\_vault\_signed\_cert\_secret) | The signed certificate to store in AWS Secrets Manager. NOT IMPLEMENTED | `string` | `null` | no |
 
 ## Outputs
 
