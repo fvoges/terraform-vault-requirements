@@ -8,7 +8,7 @@ locals {
 
 resource "aws_secretsmanager_secret" "vault_tls" {
   name        = "${var.application_prefix}-tls"
-  description = "V"
+  description = "Vault TLS certificates"
 }
 
 resource "aws_secretsmanager_secret_version" "vault_tls" {

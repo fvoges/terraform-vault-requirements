@@ -1,6 +1,17 @@
 # Terraform Vault requirements
 
-This module manages some AWS resources required by Vault Enterprise.
+This module manages some AWS resources required by the Vault Enterprise accelerator module. This is not intended to be used in production.
+
+## What it does
+
+The module can manage:
+
+- A self-signed cert chain to use for Vault TLS configuration
+  - **WARNING:** the private key will be stored in the Terraform state file. That's a big no-no for anything besides simple testing. You've been warned.
+- A KMS key to be used for auto-unseal
+- Two AWS Secrets Manager secrets for:
+  - The TLS files generated above
+  - The Vault Enterprise License
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements

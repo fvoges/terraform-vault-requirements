@@ -19,26 +19,26 @@ variable "vault_kms_deletion_days" {
 
 variable "vault_manage_tls_secrets" {
   type        = string
-  description = "Manage the TLS secret AWS Secrets Manager"
+  description = "Manage the TLS secret AWS Secrets Manager. NOT IMPLEMENTED"
   default     = false
 }
 
 
 variable "vault_ca_bundle_secret" {
   type        = string
-  description = "The CA bundle to store in AWS Secrets Manager"
+  description = "The CA bundle to store in AWS Secrets Manager. NOT IMPLEMENTED"
   default     = null
 }
 
 variable "vault_signed_cert_secret" {
   type        = string
-  description = "The signed certificate to store in AWS Secrets Manager"
+  description = "The signed certificate to store in AWS Secrets Manager. NOT IMPLEMENTED"
   default     = null
 }
 
 variable "vault_private_key_secret" {
   type        = string
-  description = "The signed certificate's private key to store in AWS Secrets Manager"
+  description = "The signed certificate's private key to store in AWS Secrets Manager. NOT IMPLEMENTED"
   default     = null
 }
 
