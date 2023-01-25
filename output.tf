@@ -8,9 +8,19 @@ output "unseal_aws_kms_id" {
   description = "AWS KMS key ID for Vault auto-unseal"
 }
 
-output "vault_tls_secret_arn" {
-  value       = aws_secretsmanager_secret.vault_tls.arn
-  description = "AWS Secret Manager ARN for Vault TLS CA, cert, and private key"
+output "vault_tls_ca_secret_arn" {
+  value       = aws_secretsmanager_secret.vault_tls_ca.arn
+  description = "AWS Secret Manager ARN for Vault TLS CA"
+}
+
+output "vault_tls_cert_secret_arn" {
+  value       = aws_secretsmanager_secret.vault_tls_cert.arn
+  description = "AWS Secret Manager ARN for Vault TLS cert"
+}
+
+output "vault_tls_key_secret_arn" {
+  value       = aws_secretsmanager_secret.vault_tls_key.arn
+  description = "AWS Secret Manager ARN for Vault TLS private key"
 }
 
 output "vault_license_secret_arn" {
