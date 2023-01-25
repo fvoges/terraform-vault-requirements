@@ -27,3 +27,8 @@ output "vault_license_secret_arn" {
   value       = aws_secretsmanager_secret.vault_license.arn
   description = "AWS Secret Manager ARN for Vault Enterprise license string"
 }
+
+output "vault_leader_tls_servername" {
+  value       = tls_cert_request.vault_cert_request.dns_names[0]
+  description = "Certificate name to ne used for leader_tls_servername setting"
+}
